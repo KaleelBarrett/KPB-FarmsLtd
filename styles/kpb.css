@@ -1,0 +1,174 @@
+.green-banana,
+.plantain,
+.ripe-banana {
+  width: 200px;
+  margin-top: 100 px;
+  display: inline-block;
+  padding: 20px;
+}
+
+.yam,
+.potato,
+.pumpkin,
+.irish,
+.okra,
+.cucumber {
+  width: 200px;
+  margin-top: 100 px;
+  display: inline-block;
+  padding: 20px;
+  margin-left: 16px;
+  size: 20 px;
+}
+
+.onion,
+.callaloo,
+.chicken,
+.melon,
+.papaya,
+.canteloupe {
+  width: 200px;
+  margin-top: 100 px;
+  display: inline-block;
+  padding: 20px;
+}
+
+.peper,
+.thyme,
+.esc,
+.garlic,
+.pork {
+  width: 200px;
+  margin-top: 100 px;
+  display: inline-block;
+  padding: 20px;
+  margin-left: 16px;
+  size: 20 px;
+}
+
+.pak-choi {
+  width: 200px;
+  margin-top: 100 px;
+  display: inline-block;
+  padding: 20px;
+  margin-left: 16px;
+  size: 20 px;
+}
+.potato-picture,
+.yellow-yam-picture,
+.onion,
+.pumpkin-picture,
+.irish-picture,
+.plantain-picture,
+.green-banana-picture,
+.pepper-picture,
+.escallion-picture,
+.thyme-picture,
+.garlic-picture,
+.callaloo-picture,
+.okra-picture,
+.cucumber-picture,
+.pak-choi-picture,
+.chicken-picture,
+.pork-picture,
+.ripe-banana-picture,
+.melon-picture,
+.papaya-picture,
+.canteloupe-picture {
+  width: 200px;
+  height: 200 px;
+}
+.food-produce button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.food-produce_button:hover {
+  background-color: #e3f4f4;
+}
+
+.ground_provision,
+.about {
+  border-top-width: 4px;
+  border-right-width: 0px;
+  border-bottom-width: 4px;
+  border-left-width: 0px;
+  border-style: solid;
+  border-color: black;
+}
+
+.fruits,
+.seasoning,
+.vegetables,
+.meats {
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 4px;
+  border-left-width: 0px;
+  border-style: solid;
+  border-color: black;
+}
+
+aside {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.aside-content {
+  text-align: center;
+}
+
+.aside-content h3 {
+  color: #333;
+}
+
+.aside-content p {
+  color: #666;
+}
+
+.aside-content a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+.aside-content a:hover {
+  background-color: #666;
+}
+
+.image-container {
+  position: relative;
+  width: 1300px; /* Adjust the width as needed */
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.text-overlay h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-overlay p {
+  font-size: 16px;
+}

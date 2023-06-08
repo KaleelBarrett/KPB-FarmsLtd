@@ -1,0 +1,22 @@
+body {
+  background-color: #f2f2f2;
+  font-family: "Caveat", cursive;
+  color: #222831;
+}
+
+.about-content {
+  font-family: "Caveat", cursive;
+}
+
+.about-content p {
+  margin-bottom: 10px;
+}
+
+.location {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+* {
+  padding-top: 0px;
+}
