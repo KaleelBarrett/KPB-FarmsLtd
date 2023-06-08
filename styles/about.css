@@ -1,3 +1,17 @@
-.background {
-min
+.text-overlay-about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+
+.text-overlay-about h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-overlay-about p {
+  font-size: 16px;
 }

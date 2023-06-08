@@ -3,7 +3,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
-  background-color: #f96d00;
+  background-color: #e43a19;
 }
 
 .logo {
@@ -38,7 +38,7 @@ nav ul li a {
 }
 
 footer {
-  background-color: #f96d00;
+  background-color: #e43a19;
   padding: 20px;
   text-align: center;
 }
