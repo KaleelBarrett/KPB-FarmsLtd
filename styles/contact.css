@@ -1,0 +1,51 @@
+body {
+  background-image: url("Picture/contact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-info,
+.contact-form {
+  width: 50%;
+  padding: 20px;
+}
+
+.contact-info {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-form h2,
+.contact-info h2 {
+  text-align: center;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.contact-form input[type="submit"] {
+  margin-top: 10px;
+}
