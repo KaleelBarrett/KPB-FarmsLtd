@@ -1,0 +1,80 @@
+/* Styles for the shopping cart section */
+.card {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Initially hidden */
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 9999; /* Ensures the cart appears above other elements */
+}
+
+.card.open {
+  right: 0; /* Slide in the cart section */
+}
+
+.card h1 {
+  margin: 0;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+.listCard {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listCard li {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.checkout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.closeShopping {
+  cursor: pointer;
+}
+
+/* Styles for the shopping cart icon and quantity indicator */
+.shopping {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.shopping img {
+  width: 24px;
+  height: 24px;
+  padding-right: 50px;
+}
+
+.quantity {
+  position: absolute;
+  top: -13px;
+  right: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff4d4d;
+  border-radius: 50%;
+}
