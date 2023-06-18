@@ -9,13 +9,14 @@
     src="https://kit.fontawesome.com/630bc57373.js"
     crossorigin="anonymous"
   ></script>
+  <script src="script.js"></script>
     <link rel="stylesheet" href="styles/kpb.css" />
 
     <link rel="stylesheet" href="styles/general.css" />
 
     <link rel="stylesheet" href="styles/header.css" />
 
-    <link rel="stylesheet" href="styles/test.css">
+    <link rel="stylesheet" href="styles/shoppingcart.css">
   </head>
   <body>
     <header>
@@ -31,11 +32,22 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <div class="cart-icon">
-        <i class="fas fa-shopping-cart"></i>
+      <div class="shopping">
+        <img src="Picture/shopping-cart-outline-svgrepo-com.svg" alt="">
+        <span class="quantity">0</span>
       </div>
     </header>
-
+    
+    <div class="list"></div>
+    
+    <div class="card">
+      <h1>Card</h1>
+      <ul class="listCard"></ul>
+      <div class="checkout">
+        <div class="total">0</div>
+        <div class="closeShopping">close</div>
+      </div>
+    </div>
 
     <section>   
     <div class="ground_provision"> 
@@ -44,35 +56,35 @@
         <img class="green-banana-picture" src="Picture/green banana.png" alt="" />
         <p>Green Banana</p>
         <p class="price"> 1 Dozen for &#36 200</p>
-        <button class="food-produce_button">Add to Cart</button>
+        <button class="food-produce_button" onclick="addToCart('green-banana')">Add to Cart</button>
       </div>
   
       <div class="potato">
         <img class="potato-picture" src="Picture/sweet-potato.png" alt="" />
         <p>Sweet Potato</p>
         <p class="price"> 1 pound for &#36 150</p>
-        <button class="food-produce_button">Add to Cart</button>
+        <button class="food-produce_button" onclick="addToCart('potato')">Add to Cart</button>
       </div>
   
       <div class="pumpkin">
         <img class="pumpkin-picture" src="Picture/pumpkin.png" alt="" />
         <p>Pumpkin</p>
         <p class="price"> 1 pound for &#36 150</p>
-        <button class="food-produce_button">Add to Cart</button>
+        <button class="food-produce_button" onclick="addToCart('pumpkin')">Add to Cart</button>
       </div>
   
       <div class="yam">
         <img class="yellow-yam-picture" src="Picture/yellow-yam.png" alt="" />
         <p>Yellow Yam</p>
         <p class="price"> 1 pound for &#36 150</p>
-        <button class="food-produce_button">Add to Cart</button>
+        <button class="food-produce_button" onclick="addToCart('yam')">Add to Cart</button>
       </div>
   
       <div class="irish">
         <img class="irish-picture" src="Picture/irish.png" alt="" />
         <p>Irish Potato</p>
         <p class="price"> 1 pound for &#36 200</p>
-        <button class="food-produce_button">Add to Cart</button>
+        <button class="food-produce_button" onclick="addToCart('irish')">Add to Cart</button>
       </div>   
   
       <div class="plantain">
@@ -81,21 +93,21 @@
         <p class="price"> 1 finger of ripe plantain for &#36 120 
           <br/> 
           &#36 80 for 1 finger of green plantain</p>
-          <button class="food-produce_button">Add to Cart</button>
+          <button class="food-produce_button" onclick="addToCart('plantain')">Add to Cart</button>
       </div>  
   
       <div class="okra">
         <img class="okra-picture" src="Picture/okra.jpg" alt="" />
         <p>Okra</p>
         <p class="price"> 1 pound for &#36 200</p>
-        <button class="food-produce_button">Add to Cart</button>
+        <button class="food-produce_button" onclick="addToCart('okra')">Add to Cart</button>
       </div>    
       
       <div class="cucumber">
         <img class="cucumber-picture" src="Picture/cucumber.png" alt="" />
         <p>Cucumber</p>
         <p class="price"> 1 pound for &#36 60</p>
-        <button class="food-produce_button">Add to Cart</button>
+        <button class="food-produce_button" onclick="addToCart('cucumber')">Add to Cart</button>
       </div> 
     </div>
   
@@ -106,28 +118,28 @@
         <img class="ripe-banana-picture" src="Picture/ripebanana.png" alt="" />
         <p>Ripe Banana</p>
         <p class="price"> 1 dozen for &#36 300</p>
-        <button class="food-produce_button">Add to Cart</button>
+        <button class="food-produce_button" onclick="addToCart('ripebanana')">Add to Cart</button>
       </div>   
   
       <div class="melon">
         <img class="melon-picture" src="Picture/watermelon.png" alt="" />
         <p>Watermelon</p>
         <p class="price"> 1 pound for &#36 150</p>
-        <button class="food-produce_button">Add to Cart</button>
+        <button class="food-produce_button" onclick="addToCart('melon')">Add to Cart</button>
       </div>  
   
       <div class="papaya">
         <img class="papaya-picture" src="Picture/papaya.png" alt="" />
         <p>Papaya</p>
         <p class="price"> 1 pound for &#36 150</p>
-        <button class="food-produce_button">Add to Cart</button>
+        <button class="food-produce_button" onclick="addToCart('papaya')">Add to Cart</button>
       </div>    
       
       <div class="canteloupe">
         <img class="canteloupe-picture" src="Picture/canteloupe.png" alt="" />
         <p>Canteloupe</p>
         <p class="price"> 1 pound for &#36 200</p>
-        <button class="food-produce_button">Add to Cart</button>
+        <button class="food-produce_button" onclick="addToCart('canteloupe')">Add to Cart</button>
       </div> 
     </div>
     
@@ -138,35 +150,35 @@
       <img class="onion-picture" src="Picture/onion.png" alt="" />
       <p>Onion</p>
       <p class="price"> 1 pound for &#36 300</p>
-      <button class="food-produce_button">Add to Cart</button>
+      <button class="food-produce_button" onclick="addToCart('onion')">Add to Cart</button>
     </div>
   
     <div class="peper">
       <img class="pepper-picture" src="Picture/scotch bonnet.webp" alt="" />
       <p>Scotch Bonnet</p>
       <p class="price"> 1 dozen for &#36 300</p>
-      <button class="food-produce_button">Add to Cart</button>
+      <button class="food-produce_button" onclick="addToCart('peper')">Add to Cart</button>
     </div>
   
     <div class="esc">
       <img class="escallion-picture" src="Picture/escallion.png" alt="" />
       <p>scallion</p>
       <p class="price"> 1 pound for &#36 200</p>
-      <button class="food-produce_button">Add to Cart</button>
+      <button class="food-produce_button" onclick="addToCart('escallion')">Add to Cart</button>
     </div>
   
     <div class="thyme">
       <img class="thyme-picture" src="Picture/thyme.png" alt="" />
       <p>thyme</p>
       <p class="price"> 1 pound for &#36 1000</p>
-      <button class="food-produce_button">Add to Cart</button>
+      <button class="food-produce_button" onclick="addToCart('thyme')">Add to Cart</button>
     </div>
   
     <div class="garlic">
       <img class="garlic-picture" src="Picture/garlic.png" alt="" />
       <p>Garlic</p>
       <p class="price"> 1 bag for &#36 200</p>
-      <button class="food-produce_button">Add to Cart</button>
+      <button class="food-produce_button" onclick="addToCart('garlic')">Add to Cart</button>
     </div>
   </div>
 
@@ -179,14 +191,14 @@
         <p class="price"> 1 bundle for &#36 100 
           <br/>
           cut up is for &#36 200</p>
-          <button class="food-produce_button">Add to Cart</button>
+          <button class="food-produce_button" onclick="addToCart('callaloo')">Add to Cart</button>
       </div>    
   
       <div class="pak-choi">
         <img class="pak-choi-picture" src="Picture/pak choi.png" alt="" />
         <p>Pak-choi</p>
         <p class="price"> 1 pound for &#36 150</p>
-        <button class="food-produce_button">Add to Cart</button>
+        <button class="food-produce_button" onclick="addToCart('pak-choi')">Add to Cart</button>
       </div>
     </div>
 
@@ -197,14 +209,14 @@
         <img class="chicken-picture" src="Picture/chicken.png" alt="" />
         <p>Chicken</p>
         <p class="price"> 1 pound for &#36 350</p>
-        <button class="food-produce_button">Add to Cart</button>
+        <button class="food-produce_button" onclick="addToCart('chicken')">Add to Cart</button>
       </div>     
   
       <div class="pork">
         <img class="pork-picture" src="Picture/pork.png" alt="" />
         <p>Pork</p>
         <p class="price">  &#36 450 for 1 pound of pork <br/> for special cuts it is 450 a pound</p>
-        <button class="food-produce_button">Add to Cart</button>
+        <button class="food-produce_button" onclick="addToCart('pork')">Add to Cart</button>
       </div> 
     </div>
 
